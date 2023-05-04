@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+@keyframes latido {
+    0%
+    {
+      transform: scale( 1 )
+        rotate(-45deg);    
+    }
+    20%
+    {
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+     40%
+    {
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+}
+
+#contenedor-inicio {
+  font-family: 'Merriweather', serif;
+}
+
+#parrafo-invitacion {
+  font-family: 'Roboto', sans-serif;
+}
+
+.corazon {
+    background-color: #C6D7CF;
+    display: inline-block;
+    height: 50px;
+    margin: 0 10px;
+    top: 0;
+    transform: rotate(-45deg);
+    width: 50px;
+}
+  
+  .corazon:before,
+  .corazon:after {
+    content: "";
+    background-color: #C6D7CF;
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+}
+  
+  .corazon:before {
+    top: -25px;
+    left: 0;
+}
+  
+  .corazon:after {
+    left: 25px;
+    top: 0;
+}
+
+.corazon {
+    animation: latido 1s infinite;
+}
