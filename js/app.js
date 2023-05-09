@@ -15,16 +15,17 @@ function inicioApp() {
         }, 5000);
     }
     reproducirAudio();
+
 }
 
 btnMusica.addEventListener('click', () => {
     const icon = document.querySelector('#btn')
     if(audio.paused) {
-        audio.play();
+        reproducirAudio();
         icon.classList.remove('fa-volume-xmark');
         icon.classList.add('fa-music');
     } else {
-        audio.pause();
+        detenerAudio();
         icon.classList.add('fa-volume-xmark');
         icon.classList.remove('fa-music');
     }
