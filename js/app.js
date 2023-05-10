@@ -8,13 +8,13 @@ const btnMusica =  document.getElementById('btn-musica');
 inicioApp();
 
 function inicioApp() {
+    document.addEventListener('DOMContentLoaded', audio.play());
     if(main.classList.contains('hidden')) {
         setTimeout( function() {
             main.classList.remove('hidden');
             corazonInicio.classList.add('hidden');
         }, 5000);
     }
-    reproducirAudio();
 
 }
 
