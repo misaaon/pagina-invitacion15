@@ -2,20 +2,19 @@
 
 const corazonInicio = document.getElementById('container-heart');
 const main = document.querySelector('main');
-const audio = new Audio('../multimedia/a-sky-full-of-stars-traducida-al-espanol.wav');
+const audio = new Audio(['../multimedia/a-sky-full-of-stars-traducida-al-espanol.wav']);
 const btnMusica =  document.getElementById('btn-musica');
 
 inicioApp();
 
 function inicioApp() {
-    document.addEventListener('DOMContentLoaded', audio.play());
     if(main.classList.contains('hidden')) {
         setTimeout( function() {
             main.classList.remove('hidden');
             corazonInicio.classList.add('hidden');
         }, 5000);
     }
-
+    audio.play();
 }
 
 btnMusica.addEventListener('click', () => {
