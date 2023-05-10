@@ -2,7 +2,8 @@
 
 const corazonInicio = document.getElementById('container-heart');
 const main = document.querySelector('main');
-const audio = new Audio(['../multimedia/a-sky-full-of-stars-traducida-al-espanol.wav']);
+// const audio = new Audio(['../multimedia/a-sky-full-of-stars-traducida-al-espanol.wav']);
+const audio = document.querySelector('audio');
 const btnMusica =  document.getElementById('btn-musica');
 
 inicioApp();
@@ -14,7 +15,6 @@ function inicioApp() {
             corazonInicio.classList.add('hidden');
         }, 5000);
     }
-    audio.play();
 }
 
 btnMusica.addEventListener('click', () => {
