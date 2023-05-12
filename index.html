@@ -15,10 +15,14 @@
     <div id="container-heart" class="flex items-center justify-center h-screen">
         <div class="corazon"></div>
     </div>
+    <div id="ponele-play" class="h-screen w-full absolute flex flex-col justify-center items-center gap-3 bg-[#E2211C] hidden">
+        <p class="pb-4 font-bold text-2xl text-gray-100">Mejora la experiencia con música</p>
+        <button type="button" id="btn-play" class="py-1 px-4 rounded-sm bg-gray-100 font-bold">Ingresar con Música</button>
+        <button type="button" id="btn-no-play" class="py-1 px-4 rounded-sm bg-gray-100 font-bold">Ingresar sin Música</button>
+    </div>
     <main class="hidden">
-        <audio autoplay>
-            <source src="multimedia/a-sky-full-of-stars-lyrics.mp3" type="audio/mp3">
-            
+        <audio>
+            <source src="multimedia/a-sky-full-of-stars-lyrics.mp3" type="audio/mp3" />
         </audio>
         <section id="contenedor-inicio" class="bg-[url('multimedia/portada-inicio.svg')] bg-no-repeat bg-cover bg-top pb-40 flex items-center justify-center">
             <div class="flex flex-col text-center text-white" >
